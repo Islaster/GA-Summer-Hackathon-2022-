@@ -15,6 +15,9 @@ button {
   cursor: pointer;
 }
 
+.btn-text-right {
+  text-align: right;
+}
 
 
 
