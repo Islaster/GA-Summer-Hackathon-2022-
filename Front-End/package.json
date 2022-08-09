@@ -9,11 +9,8 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD:Front-End/package.json
     "react-json-pretty": "^2.2.0",
-=======
     "react-router-dom": "^6.3.0",
->>>>>>> bccd55a622cd2f9bff73f7c919bee4afc5720382:Front-End/codequackers/package.json
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
