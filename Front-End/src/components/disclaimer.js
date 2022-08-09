@@ -38,11 +38,11 @@ class AllergyDisclaimer extends React.Component{
                 I understand these terms.
                 <input type="Checkbox" checked={this.state.enabled} onClick={this.handleClick} />
                 </label>
-                <button onClick={...} disabled={this.state.enabled}>Proceed</button>
+                <button  disabled={this.state.enabled}>Proceed</button>
             </form>
 		</div>
 	);
 };
 };
 
-export default Disclaimer;
+export default AllergyDisclaimer;
