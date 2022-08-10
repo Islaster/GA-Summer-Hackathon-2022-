@@ -1,23 +1,23 @@
-import React from 'react';
+
+import {Routes,Route } from "react-router-dom";
 import './App.css';
-import LoginButton from './components/LoginButton';
-import LogoutButton from './components/LogoutButton';
-import Profile from './components/Profile';
-import AllergyDisclaimer from './components/disclaimer';
-import { useAuth0 } from '@auth0/auth0-react';
+import Home from './pages/Home';
+import Profile  from './pages/profile/Profile';
+import Signup from './pages/signup/Signup';
+import Navbar from './components/Navbar';
+import Login from './pages/login/Login'
 
 function App() {
-  const { isLoading } = useAuth0();
-
-  if (isLoading) return <div>Loading...</div>;
-
   return (
-    <>
-    <LoginButton />
-    <LogoutButton />
-    <Profile />
-    <AllergyDisclaimer />
-    </>
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
   );
 }
 
