@@ -1,35 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:Front-End/src/App.css
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  padding: 2rem;
-}
-
-button {
-  margin: 2rem 0;
-  padding: 1rem 2rem;
-  width: 120px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-/* .App {
-=======
 
 .App {
->>>>>>> bccd55a622cd2f9bff73f7c919bee4afc5720382:Front-End/codequackers/src/App.css
-=======
-.App {
->>>>>>> navid-branch
   text-align: center;
 }
 
@@ -66,4 +36,4 @@ button {
   to {
     transform: rotate(360deg);
   }
-} */
+}
