@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import './signup.css';
 import { Link } from 'react-router-dom'
 import profile from "./../../image/profile.png";
@@ -22,19 +22,18 @@ function Signup() {
             <h1>Signup Page</h1>
             <div>
               <img src={name} alt="email" className="email" />
-              <input type="text" placeholder="First Name" className="name" />
-            </div>
-            <div className="second-input">
-              <img src={name} alt="pass" className="email" />
-              <input type="text" placeholder="Last Name" className="name" />
+              <input type="text" placeholder="First Name" className="name" onChange={(e) => setDetails({
+                ...details, email: e.target.value})} value={details.email}/> 
             </div>
             <div className="second-input">
               <img src={email} alt="pass" className="email" />
-              <input type="email" placeholder="Email" className="name" />
+              <input type="email" placeholder="Email" className="name" onChange={(e) => setDetails({
+                ...details, email: e.target.value})} value={details.email}/>
             </div>
             <div className="second-input">
               <img src={pass} alt="pass" className="email" />
-              <input type="password" placeholder="Password" className="name" />
+              <input type="password" placeholder="Password" className="name" onChange={(e) => setDetails({
+                ...details, email: e.target.value})} value={details.email}/>
             </div>
             <div className="login-button">
               <button>Signup</button>
@@ -45,7 +44,7 @@ function Signup() {
 
 
 
-            
+
           </div>
         </div>
       </div>
@@ -55,3 +54,4 @@ function Signup() {
 }
 
 export default Signup
+*/
