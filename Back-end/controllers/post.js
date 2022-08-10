@@ -8,11 +8,16 @@ module.exports = {
 };
 
 async function create(req, res) {
-  //Create Method thru mongoose
-  //saves to database
-  const post = await Post.create(req.body);
-  //responds to request made client-side
-  res.json(post);
+  const post = new Post(req.body);
+  post.author = req.user._id;
+
+  post.save(function (err) {
+    if (err) {
+      console.log(err);
+      res.redirect("/post/new");
+    }
+    res.redirect("/post/all");
+  });
 }
 
 async function index(req, res) {
