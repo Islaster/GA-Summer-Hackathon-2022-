@@ -5,15 +5,19 @@ const logger = require("morgan");
 const app = express();
 require("dotenv").config();
 require("./config/database");
+const methodOverride = require("method-override");
 
 app.use(logger("dev"));
 app.use(express.json());
+app.use(methodOverride("_method"));
+// Add this middleware BELOW passport middleware
 
 // Configure both serve-favicon & static middleware
 // to serve from the production 'build' folder
-app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
+//app.use(favicon(path.join(__dirname, "build", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "build")));
-
+require("./routes/post");
+require("./routes/comment");
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
 app.get("/*", function (req, res) {
